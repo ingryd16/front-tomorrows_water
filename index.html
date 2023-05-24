@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;500;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/ultimas-noticias.css">
+    <link rel="stylesheet" href="./css/recado.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <script src="./js/app.js" defer type="module"></script>
+    <title>Rotas</title>
+</head>
+
+<body>
+    <header>
+
+
+        <img src="./imagens/logo-tomorrow.png" class="img-header" alt="Logo do Tomorrow's Water">
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/sobre_nos" onclick="route()">Sobre nós</a>
+                    <a class="nav-item nav-link" href="/projetos" onclick="route()">Projetos</a>
+                    <a class="nav-item nav-link" href="/junte_se" onclick="route()">Junte-se a nós</a>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="buttons-header">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button id="teste" type="button" class="btn btn-outline">Doe agora</button>
+                <button id="teste" type="button" class="btn btn-outline">Loja TW</button>
+              </div>
+        </div>
+    </header>
+
+    <main id="root">
+        <section class="home" id="home">
+            <img class="img-onda-home" src="./imagens/img-onda-branca.png" alt="">
+                
+            <div class="textos-home">
+                <h1>Teste</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia saepe fugiat aspernatur pariatur vel illum labore alias odit quia? Dolorem ratione sit hic excepturi facilis, deserunt consectetur soluta inventore?</p>
+            </div>
+            
+        </section>
+
+
+        <section class="ultimas-noticias" id="ultimas-noticias">ultimas-noticias</section>
+
+        <section class="recado" id="recado">recado</section>
+    </main>
+
+    <footer>footer</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.img-header{
+    width: 120px;
+    height: 76px;
+}
+
+.navbar-expand-lg navbar-light bg-light{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.navbar-nav{
+    gap: 50px;
+}
+
+.nav-item{
+    color: var(--primary-color);
+    border-bottom: 4px solid transparent;
+    transition: border-color .3s;
+}
+.nav-item:hover{
+    color: var(--primary-color);
+    transition: .4s;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.btn-outline{
+    background-color: transparent;
+    transition: .6s;
+    border-color: #00C0EA;
+}
+
+.btn-outline:hover{
+    background-color: var(--primary-color);
+    transition: .6s;
+}
+

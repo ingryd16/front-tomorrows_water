@@ -1,0 +1,10 @@
+.home{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: plum;
+}
+
+.img-onda-home{
+    background-color: teal;
+}
