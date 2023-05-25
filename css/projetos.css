@@ -1,8 +1,17 @@
 .container-all-projetos{ 
     display: flex;
     flex-direction: column;
-    gap: 100px;
     margin-top: 50px;
+    align-items: center;
+}
+
+.titulo-projeto{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 600px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .container-projetos{
@@ -12,6 +21,7 @@
     flex-wrap: wrap;
     background-color: rgb(220, 235, 246);
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 .projetos-texts{
