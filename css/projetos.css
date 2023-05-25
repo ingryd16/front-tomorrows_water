@@ -12,6 +12,7 @@
     color: var(--primary-color);
     width: 600px;
     border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 20px;
 }
 
 .container-projetos{

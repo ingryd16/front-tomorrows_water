@@ -1,27 +1,29 @@
-.container-all-projetos{ 
+.container-all{ 
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-top: 50px;
+    background-color: aquamarine;
 }
 
 .container-sobre_nos{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    flex-wrap: wrap;
+    background-color: chartreuse;
 }
 
-.sobre_nos-texts{
+.container-img-principal{
+    background-image: url(https://www.portal.ap.gov.br/img/albuns/entrega-caixas-dagua-27-11-22-2649/WhatsApp%20Image%202022-11-27%20at%2011.06.17%20(1).jpeg);
+}
+
+/* .sobre_nos-texts{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
+} */
 
-.sobre_nos-img{
+/* .sobre_nos-img{
     width: 50%;
     display: flex;
     align-items: center;
@@ -37,10 +39,10 @@
 
 .marco-img{
     width: 100%;
-}
+} */
 
 
-.title-sobre_nos{
+/* .title-sobre_nos{
     font-size: 35px;
     font-weight: bold;
     color: var(--primary-color);
@@ -61,7 +63,7 @@
     font-size: 23px;
     font-weight: bold;
     color: var(--primary-color);
-}
+} */
 
 .img-onda{
     width: 100%;
