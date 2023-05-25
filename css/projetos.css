@@ -1,46 +1,49 @@
 .container-all-projetos{ 
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
     margin-top: 50px;
 }
 
-.container-sobre_nos{
+.container-projetos{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
+    background-color: rgb(220, 235, 246);
+    border-radius: 10px;
 }
 
-.sobre_nos-texts{
+.projetos-texts{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
-.sobre_nos-img{
+.projetos-img{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
-.img-marco{
+.img-projetos-div{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
 }
 
-.marco-img{
+.projetos_img{
     width: 100%;
 }
 
 
-.title-sobre_nos{
+.title-projetos{
     font-size: 35px;
     font-weight: bold;
     color: var(--primary-color);
@@ -48,7 +51,7 @@
     text-align: center;
 }
 
-.texts-sobre_nos{
+.texts-projetos{
     width: 80%;
     text-align: justify;
     gap: 10px;
@@ -57,7 +60,7 @@
     font-size: 23px;
 }
 
-.text-destaque-sobre_nos{
+.text-destaque-projetos{
     font-size: 23px;
     font-weight: bold;
     color: var(--primary-color);
