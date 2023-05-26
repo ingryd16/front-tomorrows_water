@@ -1,29 +1,37 @@
+/* CONTAINER FLEX */
+
 .container-all{ 
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    background-color: aquamarine;
+    gap: 130px;
+    margin-top: 80px;
 }
 
 .container-sobre_nos{
     display: flex;
-    background-color: chartreuse;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-img-principal{
-    background-image: url(https://www.portal.ap.gov.br/img/albuns/entrega-caixas-dagua-27-11-22-2649/WhatsApp%20Image%202022-11-27%20at%2011.06.17%20(1).jpeg);
+.linha{
+    background-color: var(--primary-color);
+    width: 3px;
+    height: 200px;
 }
 
-/* .sobre_nos-texts{
-    width: 50%;
+.sobre_nos-texts{
+    width: 49%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-} */
+    gap: 20px;
+}
 
-/* .sobre_nos-img{
+.sobre_nos-img{
     width: 50%;
     display: flex;
     align-items: center;
@@ -38,12 +46,11 @@
 }
 
 .marco-img{
-    width: 100%;
-} */
+    width: 90%;
+}
 
-
-/* .title-sobre_nos{
-    font-size: 35px;
+.title-sobre_nos{
+    font-size: 2rem;
     font-weight: bold;
     color: var(--primary-color);
     width: 100%;
@@ -56,15 +63,165 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 23px;
+    font-size: 1.3rem;
 }
 
 .text-destaque-sobre_nos{
-    font-size: 23px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--primary-color);
-} */
+}
 
 .img-onda{
     width: 100%;
 }
+
+.container-sobre_nos_invert{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTAINER COLUMN */
+.container-sobre_nos_column{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.sobre_nos-texts_column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sobre_nos-img_column{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-marco_column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.marco-img_column{
+    width: 100%;
+}
+
+.title-sobre_nos_column{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+}
+
+.texts-sobre_nos_column{
+    width: 90%;
+    text-align: justify;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.text-destaque-sobre_nos_column{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.linha_column{
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 3px;
+}
+
+.linha_img{
+    background-color: var(--primary-color);
+    width: 3px;
+    height: 500px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container-sobre_nos {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .sobre_nos-texts {
+      width: 100%;
+    }
+
+    .texts-sobre_nos{
+        width: 100%;
+    }
+    
+    .sobre_nos-img {
+      width: 100%;
+    }
+    
+    .img-marco {
+      width: 80%;
+    }
+
+    .linha{
+        background-color: var(--primary-color);
+        width: 200px;
+        height: 3px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .container-sobre_nos_column {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .sobre_nos-texts_column {
+      width: 100%;
+    }
+    
+    .sobre_nos-img_column {
+      width: 100%;
+    }
+    
+    .img-marco_column {
+      width: 90%;
+    }
+
+    .linha_img{
+        height: 50px;
+    }
+
+    .texts-sobre_nos{
+        text-align: center;
+    }
+    .texts-sobre_nos_column{
+        text-align: center;
+    }
+
+    .container-sobre_nos_invert{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+  
