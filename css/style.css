@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #00C0EA;
-    --primary-color-light: #95E0F0;
-    --second-color:#EFEFEF;
+  --primary-color: #00C0EA;
+  --primary-color-light: #95E0F0;
+  --second-color: #EFEFEF;
 }
 
 html {
@@ -15,21 +15,21 @@ body {
 }
 
 section {
-    height: 80vh;
+  height: 80vh;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #FFF;
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    color: var(--primary-color);
-    font-weight: 600;
-    user-select: none;
-    height: 100px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFF;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: var(--primary-color);
+  font-weight: 600;
+  user-select: none;
+  height: 100px;
 }
 
-footer{
-    height: 100px;
+footer {
+  height: 100px;
 }
