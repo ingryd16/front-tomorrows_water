@@ -1,3 +1,5 @@
-.ultimas-noticias{
-    background-color: teal;
-}
+.ultimas-noticias{height: 100vh;} 
+
+.card-container { display: flex; gap: 20px; flex-wrap: wrap;}
+
+.container_noticias{gap: 40px;}

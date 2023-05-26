@@ -2,9 +2,32 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: plum;
+    height: fit-content; 
 }
 
 .img-onda-home{
+    grid-area: content;
     background-color: teal;
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.title_noticias{
+    display: flex;
+    font-size: 34px;
+    font-weight: 900;
+    height: fit-content;
+    border-bottom: 4px solid var(--primary-color);
 }

@@ -11,6 +11,7 @@ html {
 body {
   height: 100vh;
   display: grid;
+  grid-template-areas: content;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
