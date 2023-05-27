@@ -49,6 +49,8 @@
 
 .projetos_img{
     width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .title-projetos{
@@ -77,6 +79,8 @@
 .img-onda{
     width: 100%;
 }
+
+
 
 @media screen and (max-width: 600px) {
     .titulo-projeto {

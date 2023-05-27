@@ -3,17 +3,19 @@
 .container-all{ 
     display: flex;
     flex-direction: column;
-    gap: 130px;
+    gap: 5rem;
     margin-top: 80px;
 }
 
 .container-sobre_nos{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 
 .linha{
@@ -29,6 +31,8 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sobre_nos-img{
@@ -78,22 +82,28 @@
 
 .container-sobre_nos_invert{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 
 /* CONTAINER COLUMN */
 .container-sobre_nos_column{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
     justify-content: center;
+    background-color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 .sobre_nos-texts_column{
