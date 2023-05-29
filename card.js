@@ -37,14 +37,14 @@ class card extends HTMLElement {
                 box-sizing: border-box;
             }
             .card{
-                max-width: 414px;
+                max-width: 360px;
                 height: 712px;
                 display: flex;
                 flex-direction: column;
-                
                 place-items: center;
                 background-color: ${this.cor};
-                box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                // box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
             }
             .card:hover{
                 // width: 210px;
@@ -60,6 +60,7 @@ class card extends HTMLElement {
                 padding-right: 20px;
                 line-height: 34px;
                 flex-wrap: wrap;
+                padding-left: 30px;
                 height: 30%;
                 display: flex;
                 place-items: start;
@@ -71,12 +72,13 @@ class card extends HTMLElement {
                 padding-left: 20px;
                 padding-right: 20px;
                 height: 20%;
+                padding-left: 30px;
                 display: flex;
                 place-items: start;
             }
             .card__image{
-                place-self: start;
-                width: 414px;
+                place-self: center;
+                width: 360px;
                 height: 300px;
                 background-color: white;
                 background-image: url(${this.foto});
