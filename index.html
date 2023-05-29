@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/sobre_nos.css">
     <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/section-onda.css">
+    <link rel="stylesheet" href="./css/section-onda-home.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
@@ -45,10 +48,10 @@
     <header>
         <img src="./imagens/logo-tomorrow.png" class="img-header" alt="Logo do Tomorrow's Water">
         <div class="navbar">
-            <nav class="navbar navbar-expand-lg navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -70,9 +73,13 @@
     </header>
 
     <main id="root">
+        <section class="onda-home" id="onda-home">
+            <div class="div-img-onda-home">
+                <img class="img-onda-home" src="./imagens/img-onda-branca.png" alt="">
+            </div>
+        </section>
         <section class="home" id="home">
-            <img class="img-onda-home" src="./imagens/img-onda-branca.png" alt="">
-
+           
             <!-- <div class="textos-home">
                 <h1>Teste</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia saepe fugiat aspernatur
@@ -115,32 +122,42 @@
                 <div class="title_noticias">
                     <span>Últimas notícias</span>
                 </div>
-                    <div class="card-container">
-                        <card-noticia foto="./imagens/noticia-1.png" title="Ratificar Acordo de Escazú é
+                <div class="card-container">
+                    <card-noticia foto="./imagens/noticia-1.png" title="Ratificar Acordo de Escazú é
                         garantir mais transparência e participação da sociedade civil nas decisões 
                         sobre meio ambiente" nome="Texto permite que cidadão possa cobrar acesso à
                         justiça e à participação na tomada de decisões
-                        sobre temas ambientais" cor="#FFF" ></card-noticia>
-                
-                        <card-noticia foto="./imagens/noticia-2.png" title="Vozes da floresta 
+                        sobre temas ambientais" cor="#FFF"></card-noticia>
+
+                    <card-noticia foto="./imagens/noticia-2.png" title="Vozes da floresta 
                         presentes no ATL 2023 ecoam sem intermediários" nome="Projeto fortalece redes de ativismo ampliando a
                         participação de jovens comunicadores na maior
-                        mobilização indígena do Brasil" cor="#FFF" 
-                        ></card-noticia>
-                       
-                        <card-noticia foto="./imagens/noticia-3.png" title="Suspensão do princípio da 
+                        mobilização indígena do Brasil" cor="#FFF"></card-noticia>
+
+                    <card-noticia foto="./imagens/noticia-3.png" title="Suspensão do princípio da 
                         boa-fé pelo STF garante mais transparência e controle ao comércio do ouro 
                         no Brasil" nome="Decisão do STF impõe regras eficientes para
                         garantir a transparência e o controle da
-                        comercialização do minério"  cor="#FFF" ></card-noticia>
-                    </div>
+                        comercialização do minério" cor="#FFF"></card-noticia>
                 </div>
+            </div>
         </section>
 
-        <section class="recado" id="recado">recado</section>
+        <section class="recado" id="recado">
+            <span>recado</span>
+        </section>
+
+        <section class="onda" id="onda">
+            <div class="div-img-onda">
+                <img  class="img-onda-footer" src="./imagens/img-onda-branca.png" alt="">
+            </div>
+        </section>
     </main>
 
-    <footer>footer</footer>
+    <footer>
+        <span>footer</span>
+        
+    </footer>
 </body>
 
 </html>

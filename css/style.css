@@ -28,9 +28,6 @@ header {
   color: var(--primary-color);
   font-weight: 600;
   user-select: none;
-  height: 100px;
+  height: 90px;
 }
 
-footer {
-  height: 100px;
-}

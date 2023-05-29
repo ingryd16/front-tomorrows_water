@@ -44,7 +44,7 @@ class card extends HTMLElement {
                 
                 place-items: center;
                 background-color: ${this.cor};
-                box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.2);
+                box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
             }
             .card:hover{
                 // width: 210px;
@@ -62,7 +62,8 @@ class card extends HTMLElement {
                 flex-wrap: wrap;
                 height: 30%;
                 display: flex;
-                place-items: end;
+                place-items: start;
+                margin-top: 18px;
             }
             .card__text{
                 color: #00000;
@@ -71,7 +72,7 @@ class card extends HTMLElement {
                 padding-right: 20px;
                 height: 20%;
                 display: flex;
-                place-items: center;
+                place-items: start;
             }
             .card__image{
                 place-self: start;

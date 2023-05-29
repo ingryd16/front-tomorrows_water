@@ -3,11 +3,12 @@
     width: 100%;
     flex-direction: column;
     height: fit-content; 
+    
 }
 
-.img-onda-home{
+
+.carouselExampleIndicators{
     grid-area: content;
-    background-color: teal;
 }
 
 .carousel-inner{

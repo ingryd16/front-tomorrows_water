@@ -1,0 +1,14 @@
+.onda-home{
+    height: fit-content;
+    z-index: 999;
+}
+
+.div-img-onda-home{
+    /* background-color: aqua; */
+}
+.img-onda-home{
+    grid-area: content;
+    /* background-color: transparent; */
+    width: 100%;
+    z-index: 1;
+}

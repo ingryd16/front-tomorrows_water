@@ -1,4 +1,4 @@
-.ultimas-noticias{height: 100vh;} 
+.ultimas-noticias{display: flex; height: fit-content; padding: 25px; padding-bottom: 50px } 
 
 .card-container { display: flex; gap: 20px; flex-wrap: wrap;}
 
