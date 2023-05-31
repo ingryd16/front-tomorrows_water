@@ -11,6 +11,10 @@
     gap: 50px;
 }
 
+.navbar-nav span{
+    color: var(--primary-color);
+}
+
 .nav-item {
     color: var(--primary-color);
     border-bottom: 4px solid transparent;
