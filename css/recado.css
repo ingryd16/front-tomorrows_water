@@ -1,4 +1,4 @@
 .recado{
-    background-color: var(--second-color);
     display: flex;
+    background-color: crimson;
 }

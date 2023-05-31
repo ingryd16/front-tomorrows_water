@@ -5,9 +5,19 @@
 .div-img-onda{
     background-color: var(--second-color);
 }
-.img-onda-footer{
+
+.img-onda-noticias-1{
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.img-onda-noticias-2{
     transform: rotate(180deg);
-    grid-area: content;
+    width: 100%;
+    padding-top: 0;
+}
+
+.img-onda-footer{
     width: 100%;
     padding-bottom: 0;
 }
