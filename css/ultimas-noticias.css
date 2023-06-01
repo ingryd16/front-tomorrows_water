@@ -1,10 +1,14 @@
+/* section .ultimas-noticias {
+  max-height: 90vh;
+} */
+
 .ultimas-noticias {
   display: flex;
   padding: 25px;
   padding-bottom: 50px;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  max-height: 90vh;
   background-color: var(--second-color);
   /* background: linear-gradient(to left top, #031A9A, #8B53FF);  */
 }

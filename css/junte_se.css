@@ -1,11 +1,11 @@
-section {
-    height: fit-content;
+.container_geral{
+    height: 150vh;
 }
 .container_all_junte-se {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
 }
 
