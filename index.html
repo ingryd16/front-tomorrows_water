@@ -39,7 +39,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer>
     </script>
-<script src="https://kit.fontawesome.com/aff2bef688.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/aff2bef688.js" crossorigin="anonymous"></script>
 
   <script src="./js/app.js" defer type="module"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -59,7 +59,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="/"> Home  <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="/"> Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="/sobre_nos" onclick="route()">Sobre nós</a>
             <a class="nav-item nav-link" href="/projetos" onclick="route()">Projetos</a>
             <a class="nav-item nav-link" href="/junte_se" onclick="route()">Junte-se a nós</a>
@@ -190,10 +190,69 @@
 
 
     <section class="recado" id="recado">
-      <span>recado</span>
+      <div class="container-input-recado">
+        <div class="container_recado">
+          <div class="validation">
+            <div class="card-produtos">
+              <div class="forms">
+                <div class="row-1">
+                  <div class="nome">
+                    <div>
+                      <span>Nome:</span>
+                    </div>
+                    <input type="text" placeholder="Nome" class="input-linha">
+                  </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.27328027426!2d-51.0781884!3d0.0006722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e1e1ca3dd4a5%3A0xa1d1701322b62529!2sMarco%20Zero%20do%20Equador!5e0!3m2!1spt-BR!2sbr!4v1685621166395!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <div class="preco">
+                    <div>
+                      <span>Preço:</span>
+                    </div>
+                    <input type="text" placeholder="Preço" class="input-linha">
+                  </div>
+                </div>
 
+                <div class="row-1">
+                  <div class="medidas">
+                    <div>
+                      <span>Medidas:</span>
+                    </div>
+                    <div class="inputs-medidas">
+                      <input type="number" placeholder="Altura" class="input-linha">
+                      <input type="number" placeholder="Largura" class="input-linha">
+                    </div>
+                  </div>
+
+                  <div class="cor">
+                    <div>
+                      <span>Cor:</span>
+                    </div>
+                    <input type="text" placeholder="Cor" class="input-linha">
+                  </div>
+                </div>
+
+                <div class="row-1">
+                  <div class="descricao">
+                    <div>
+                      <span>Descrição:</span>
+                    </div>
+                    <input type="text" class="input-linha">
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <button>Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-input-mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.27328027426!2d-51.0781884!3d0.0006722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e1e1ca3dd4a5%3A0xa1d1701322b62529!2sMarco%20Zero%20do%20Equador!5e0!3m2!1spt-BR!2sbr!4v1685621166395!5m2!1spt-BR!2sbr"
+            width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </section>
 
     <section class="onda" id="onda">
@@ -228,7 +287,7 @@
         <i class="fa-regular fa-phone" style="color: #00c0ea;"></i>
       </li>
       <li>
-        <i class="fa-regular fa-envelope" style="color: #00c0ea;"></i>      
+        <i class="fa-regular fa-envelope" style="color: #00c0ea;"></i>
       </li>
     </div>
 
