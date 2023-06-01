@@ -1,5 +1,33 @@
-.recado{
+.recado {
     display: flex;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     background-color: crimson;
+    height: 500px;
+}
+
+.container-input-recado {
+    background-color: aqua;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.container-input-mapa {
+    background-color: rgb(166, 255, 0);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.container_recado {
+    background-color: plum;
+    width: 350px;
+    height: 350px;
 }
