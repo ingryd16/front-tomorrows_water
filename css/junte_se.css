@@ -36,6 +36,122 @@ section {
     margin: 20px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+    flex-wrap: wrap;
+}
+.container-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 500px;
+    min-height: 460px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    /* box-shadow: 10px 14px 10px 10px #adadad; */
+}
+.image-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.container-cards .image-card {
+    display: flex;
+    position: absolute;
+}
+.container-cards .container-description {
+    display: flex;
+    position: relative;
+    justify-self: end;
+}
+
+.image-card img {
+    width: 70%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+.container-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: unset;
+    height: 30%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.795);
+    justify-content: flex-end;
+}
+
+.titulo-produto {
+    font-size: 30px;
+    font-weight: 500;
+}
+.descricao-produto {
+    font-size: 26px;
+}
+.div-button {
+    padding-top: 10px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.button-produtos {
+    background-color: var(--primary-color);
+    color: white;
+    height: 45px;
+    width: 180px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.doacao {
+    width: 100%;
+    background-color: black;
+}
+
+
+
+/* notebook  media query*/
+/* .container_all_junte-se {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_junte-se {
+    display: flex;
+    height: fit-content;
+    margin-top: 30px;
+    font-size: 30px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.titulo_junte-se span {
+    font-size: 30px;
+    font-weight: 800;
+}
+.titulo_junte-se .titulo-azul {
+    color: var(--primary-color);
+}
+.container_produtos {
+    display: grid;
+    width: fit-content;
+    margin: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -107,9 +223,4 @@ section {
     border: none;
     font-size: 20px;
     border-radius: 20px;
-}
-
-.doacao {
-    width: 100%;
-    background-color: black;
-}
+} */
