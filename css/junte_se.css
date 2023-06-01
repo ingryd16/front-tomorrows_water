@@ -1,4 +1,4 @@
-section{
+section {
     height: fit-content;
 }
 .container_all_junte-se {
@@ -7,24 +7,20 @@ section{
     width: 100%;
     height: 100%;
     justify-content: center;
-    background-color: purple;
 }
 
-.produtos{
+.produtos {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: orangered;
 }
 
 .titulo_junte-se {
     display: flex;
     height: fit-content;
-    margin: 40px;
+    margin-top: 30px;
     font-size: 30px;
     border-bottom: 4px solid var(--primary-color);
-    background-color: aquamarine;
 }
 
 .titulo_junte-se span {
@@ -37,23 +33,83 @@ section{
 .container_produtos {
     display: grid;
     width: fit-content;
-    margin: 40px;
+    margin: 20px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    background-color: crimson;
     gap: 30px;
+    flex-wrap: wrap;
 }
-.container-cards{
+.container-cards {
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
+    width: 500px;
+    height: 410px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 14px 10px 10px #adadad;
+}
+.image-card {
+    display: flex;
+    position: relative;
     flex-direction: column;
-    width: 550px;
-    height: 550px;
-    border: 4px solid gray;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
 }
 
+.container-cards .image-card {
+    display: flex;
+    position: absolute;
+}
+.container-cards .container-description {
+    display: flex;
+    position: relative;
+    justify-self: end;
+}
 
-.doacao{
+.image-card img {
+    width: 90%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+.container-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: unset;
+    height: 30%;
+    width: 60%;
+    background-color: white;
+    justify-content: flex-end;
+}
+
+.titulo-produto {
+    font-size: 30px;
+    font-weight: 500;
+}
+.descricao-produto {
+    font-size: 26px;
+}
+.div-button {
+    padding-top: 10px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.button-produtos {
+    background-color: var(--primary-color);
+    color: white;
+    height: 45px;
+    width: 180px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.doacao {
     width: 100%;
     background-color: black;
 }
