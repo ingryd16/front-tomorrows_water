@@ -90,3 +90,6 @@
 .row-1 {
     margin-top: 10px;
 }
+.error-message{
+    color: red;
+}

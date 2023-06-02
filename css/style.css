@@ -30,3 +30,28 @@ header {
   height: 90px;
 }
 
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #95E0F0; /* cor de fundo da tela de carregamento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-image {
+  width: 50px; /* ajuste o tamanho da imagem conforme necessário */
+  animation: jump 2.5s infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
