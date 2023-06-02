@@ -9,6 +9,8 @@ const cardProduct = (dados) => {
     const card = document.createElement('div')
     card.classList.add('card')
 
+    
+
     const text_container = document.createElement('div')
     card.classList.add('text_container')
 
@@ -20,15 +22,13 @@ const cardProduct = (dados) => {
     description.classList.add('card__biography')
     description.textContent = dados.descricao;
 
-    text_container.append(name, description) 
-
-    
+    text_container.append(name /* description */)
 
     const img = document.createElement('img')
     img.classList.add('card__img')
     img.src = dados.imagem;
 
-    card.append(img, text_container /* description */)
+    card.append(img, text_container)
 
     return card
 
