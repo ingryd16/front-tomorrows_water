@@ -46,6 +46,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <script src="script.js" defer></script>
   <script src="./card.js" type="module"></script>
+  <script src="post.js" defer type="module"></script>
+
   <title>Tommorow's Water</title>
 </head>
 
@@ -189,7 +191,6 @@
       </div>
     </section>
 
-
     <section class="recado" id="recado">
       <div class="container-recado">
         <div class="container_input_recado">
@@ -198,19 +199,19 @@
           </div>
 
           <div class="recado-input">
-            <div class="forms">
+            <form class="forms">
 
               <div class="row-1">
                 <div class="nome">
                   <div><span>Nome:</span></div>
-                  <input type="text" placeholder="Nome" class="input-linha">
+                  <input type="text" placeholder="Nome" class="input-linha" id="input-nome" name="campo1">
                 </div>
               </div>
 
               <div class="row-1">
                 <div class="email">
                   <div><span>Email:</span></div>
-                  <input type="text" placeholder="Email" class="input-linha">
+                  <input type="text" placeholder="Email" class="input-linha" id="input-email" name="campo2">
                 </div>
               </div>
 
@@ -221,11 +222,11 @@
                 </div>
               </div>
 
-            </div>
+            </form>
           </div>
 
           <div class="btn-recado-enviar">
-            <button class="btn-enviar-recados">Enviar</button>
+            <button class="btn-enviar-recados" id="submit-button" type="submit" onclick="createAluno()">Enviar</button>
           </div>
         </div>
 
@@ -284,3 +285,4 @@
 </body>
 
 </html>
+
