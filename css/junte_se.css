@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    
 }
 
 /* TITULO */
@@ -23,7 +22,6 @@
     color: var(--primary-color);
 }
 
-
 /* PRODUTOS */
 .produtos {
     display: flex;
@@ -38,13 +36,12 @@
     display: flex;
     align-items: center;
 }
-.container-produtos{
+.container-produtos {
     display: grid;
     gap: 50px;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-
 }
 .card {
     display: grid;
@@ -54,7 +51,7 @@
     min-height: 420px;
     flex-direction: column;
     border: none;
-    
+
     box-shadow: 10px 14px 10px 10px #adadad;
 }
 .card__img {
@@ -64,16 +61,17 @@
     align-items: center;
     justify-content: center;
     width: 355px;
-    height: 355px ;
+    height: 355px;
     aspect-ratio: 4/3;
     object-fit: cover;
 }
-.container-cards .card__img{
+.container-cards .card__img {
     display: grid;
     position: absolute;
 }
 
-.text_container h2, p{
+.text_container h2,
+p {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -89,14 +87,14 @@
     background-color: rgba(255, 255, 255, 0.918);
 }
 
-.text_container{
+.text_container {
     height: auto;
     display: flex;
     align-self: flex-end;
 
     justify-content: flex-end;
-    flex-direction: column; 
-} 
+    flex-direction: column;
+}
 .card__name {
     font-size: 30px;
     font-weight: 500;
@@ -105,7 +103,6 @@
 .card__biography {
     visibility: hidden;
     font-size: 26px;
-    
 }
 .container-cards .card__biography {
     display: flex;
@@ -113,15 +110,274 @@
     justify-self: end;
 }
 
-
-
+/* Section doação */
 .doacao {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
     border: 8px solid black;
 }
 
+/* TITULO */
+.header-doacao {
+    width: 100%;
+    justify-self: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.title_doacao {
+    display: grid;
+    height: fit-content;
+    justify-content: flex-end;
+    margin-top: 30px;
+    font-size: 30px;
+    width: 58%;
+}
+
+.titulo_doacao span {
+    font-size: 30px;
+    font-weight: 800;
+    border-bottom: 4px solid var(--primary-color);
+}
+.titulo_doacao .titulo-azul {
+    color: var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.seja-patrocinador {
+    width: 40%;
+
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+.seja-patrocinador button {
+    width: 190px;
+    height: 40px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+button.button-patrocinador {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* MODAL WINDOW */
+.wraper a{
+    text-decoration: none;
+}
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+}
+
+.modal a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content {
+    border-radius: 12px;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    background: #fff;
+    padding: 1em 2em;
+}
+
+.footer {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+}
+
+.footer-btn-close {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cfcca8;
+    color: #000000;
+    border-radius: 3px;
+}
+
+/* FORMS */
+.validation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-weight: 900;
+}
+
+.actions {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00c0ea;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
+    color: #00c0ea;
+}
+
+.card-doacao {
+    background-color: #f5f5f5;
+    width: 500px;
+    height: fit-content;
+    align-self: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00c0ea;
+}
+
+.title {
+    text-align: start;
+    font-size: 20px;
+    width: fit-content;
+    border-bottom: 3px solid #00c0ea;
+}
+
+.container-precos {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.card-35,
+.card-50,
+.card-100,
+.card-outro,
+.card-unica {
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1.9px solid black;
+}
+
+.card-35:hover,
+.card-50:hover,
+.card-100:hover,
+.card-outro:hover,
+.card-unica:hover {
+    color: var(--primary-color);
+    padding: 6px;
+    font-weight: 500;
+    border-style: dotted;
+    border-radius: 10px;
+    border: 1.9px solid var(--primary-color);
+    border-style: dashed;
+    background-color: transparent;
+}
+
+/*STYLE FORMS*/
+.forms {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.row-1 {
+    display: flex;
+    width: 450px;
+    gap: 15px;
+}
+
+.input-linha {
+    width: 100%;
+}
+
+.nome,
+.preco,
+.medidas {
+    width: 100%;
+}
+
+.inputs-medidas {
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    background-color: var(--primary-color-light);
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #00c0ea;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00c0ea;
+}
+
+footer {
+    display: none;
+}
 
 /* notebook  media query*/
 /* .container_all_junte-se {
