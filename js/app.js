@@ -1,6 +1,7 @@
 'use strict'
 
 import './rounter.js'
+import './modal_window.js'
 
 
 export const produtos = async () => {
