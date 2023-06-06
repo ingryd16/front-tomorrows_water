@@ -48,6 +48,7 @@
     <script src="./script.js" defer></script>
     <script src="../card.js" type="module"></script>
     <script src="../js/post_patrocinador.js" defer type="module"></script>
+    <script src="../js/post_voluntario.js" defer type="module"></script>
     <title>Tommorow's Water</title>
 </head>
 
@@ -290,7 +291,7 @@
                                             <div>
                                                 <span>Nome:</span>
                                             </div>
-                                            <input type="text" placeholder="Nome" class="input-linha">
+                                            <input id="input-nome" type="text" placeholder="Nome" class="input-linha">
                                         </div>
                                     </div>
 
@@ -300,7 +301,7 @@
                                                 <span>Cpf:</span>
                                             </div>
 
-                                            <input type="text" placeholder="Cpf" class="input-linha">
+                                            <input id="input-cpf" type="text" placeholder="Cpf" class="input-linha">
                                         </div>
                                     </div>
 
@@ -309,7 +310,7 @@
                                             <div>
                                                 <span>Email:</span>
                                             </div>
-                                            <input type="text" placeholder="Email" class="input-linha">
+                                            <input id="input-email" type="text" placeholder="Email" class="input-linha">
                                         </div>
                                     </div>
 
@@ -318,7 +319,7 @@
                                             <div>
                                                 <span>Telefone:</span>
                                             </div>
-                                            <input type="text" placeholder="Telefone" class="input-linha">
+                                            <input id="input-telefone" type="text" placeholder="Telefone" class="input-linha">
                                         </div>
                                     </div>
                                     <div class="row-1">
@@ -326,7 +327,30 @@
                                             <div>
                                                 <span>Data de nascimento:</span>
                                             </div>
-                                            <input type="text" placeholder="Data de nascimento" class="input-linha">
+                                            <input id="input-data-nascimento" type="text" placeholder="aaaa-mm-dd" class="input-linha">
+
+                                            <script>
+                                                // Obtenha uma referência para o campo de entrada
+                                                var input = document.getElementById("input-data-nascimento");
+                                              
+                                                // Adicione um ouvinte de evento para o evento "input" (quando o valor do campo é alterado)
+                                                input.addEventListener("input", function() {
+                                                  // Obtém o valor atual do campo
+                                                  var valor = this.value;
+                                              
+                                                  // Remove todos os caracteres que não são dígitos
+                                                  var apenasNumeros = valor.replace(/\D/g, "");
+                                              
+                                                  // Limita a quantidade de caracteres para 8
+                                                  apenasNumeros = apenasNumeros.slice(0, 8);
+                                              
+                                                  // Formata o valor com hífens no formato desejado (aaaa-mm-dd)
+                                                  var novoValor = apenasNumeros.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
+                                              
+                                                  // Define o novo valor formatado no campo de entrada
+                                                  this.value = novoValor;
+                                                });
+                                              </script>
                                         </div>
                                     </div>
                                     <div class="row-1">
@@ -335,9 +359,9 @@
                                                 <label class="label-genero" for="genero">Gênero:</label>
                                                 <select name="genero" id="genero" placeholder="Escolha um">
                                                     <option value="">Escolha um</option>
-                                                    <option value="feminino">Feminino</option>
-                                                    <option value="masculino">Masculino</option>
-                                                    <option value="outros">Outros</option>
+                                                    <option value="1">Feminino</option>
+                                                    <option value="2">Masculino</option>
+                                                    <option value="3">Outros</option>
                                                 </select>
 
                                             </div>
@@ -346,8 +370,8 @@
                                     </div>
 
 
-                                    <div class="btn">
-                                        <button>Enviar</button>
+                                    <div class="btn" >
+                                        <button id="button-enviar">Enviar</button>
                                     </div>
                                 </div>
 
