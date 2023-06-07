@@ -3,7 +3,7 @@
 const routes = {
     '/sobre_nos': '/pages/sobre-nos.html',
     '/projetos': '/pages/projetos.html',
-    '/junte_se': '/pages/junte-se.html',
+    '/junte-se': '/pages/junte-se.html',
 }
 
 const route = async() => {

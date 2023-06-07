@@ -14,19 +14,13 @@
     <link rel="shortcut icon" href="./imagens/image_1-removebg-preview.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/ultimas-noticias.css" />
-    <link rel="stylesheet" href="../css/recado.css" />
     <link rel="stylesheet" href="../css/menu.css" />
-    <link rel="stylesheet" href="../css/sobre_nos.css" />
-    <link rel="stylesheet" href="../css/projetos.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/section-onda.css" />
-    <link rel="stylesheet" href="../css/section-onda-home.css" />
     <link rel="stylesheet" href="../css/junte_se.css">
+    <link rel="shortcut icon" href="../imagens/image_1-removebg-preview.png" type="image/x-icon" />
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
@@ -50,6 +44,7 @@
     <script src="../js/post_patrocinador.js" defer type="module"></script>
     <script src="../js/post_voluntario.js" defer type="module"></script>
     <script src="../js/post_doador.js" defer type="module"></script>
+    <script src="./js/button.js" defer ></script>
     <title>Tommorow's Water</title>
 </head>
 
@@ -65,16 +60,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="/"> Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="/sobre_nos" onclick="route()">Sobre nós</a>
-                        <a class="nav-item nav-link" href="/projetos" onclick="route()">Projetos</a>
-                        <a class="nav-item nav-link" href="./pages/junte-se.html">Junte-se a nós</a>
+            <a class="nav-item nav-link" href="./sobre-nos.html">Sobre nós</a>
+            <a class="nav-item nav-link" href="./projetos.html">Projetos</a>
+            <a class="nav-item nav-link" href="./junte-se.html">Junte-se a nós</a>
                     </div>
                 </div>
             </nav>
         </div>
 
         <div class="buttons-header">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" onclick="redirecionarPagina()">
                 <button id="teste" type="button" class="btn btn-outline">
                     Doe agora
                 </button>
@@ -415,38 +410,42 @@
 
     <footer>
         <div class="links_container">
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#noticias">Últimas notícias</a>
-                </li>
-                <li><a href="#recado">Recado</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#noticias">Últimas notícias</a>
+            </li>
+            <li><a href="#recado">Recado</a>
+            </li>
+          </ul>
         </div>
-
+    
         <div class="redes_sociais">
-            <li>
-                <i class="fa-brands fa-whatsapp" style="color: #00c0ea;"></i>
-            </li>
-            <li>
-                <i class="fa-brands fa-instagram" style="color: #00c0ea;"></i>
-            </li>
-            <li>
-                <i class="fa-regular fa-phone" style="color: #00c0ea;"></i>
-            </li>
-            <li>
-                <i class="fa-regular fa-envelope" style="color: #00c0ea;"></i>
-            </li>
+          <li>
+            <i class="fa-brands fa-whatsapp" style="color: #00c0ea;"></i>
+          </li>
+          <li>
+            <i class="fas fa-phone" style="color: #00c0ea;"></i>    
+          </li>
+          <li>
+            <a href="https://www.instagram.com/tomorrows.water/">
+              <i class="fa-brands fa-instagram" style="color: #00c0ea;"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:tomorrows.water487@gmail.com">
+              <i class="fa-regular fa-envelope" style="color: #00c0ea;"></i>
+            </a>
+          </li>
         </div>
-
+    
         <div class="logo_footer">
-            <img src="../imagens/logo_tomorrow_footer.png" alt="Logo do Tomorrow's Water">
+          <img src="./imagens/logo_tomorrow_footer.png" alt="Logo do Tomorrow's Water">
         </div>
-
-    </footer>
+    
+      </footer>
 </body>
 
 </html>
