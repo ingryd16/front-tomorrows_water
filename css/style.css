@@ -43,7 +43,7 @@ header {
 }
 
 .loading-image {
-  width: 50px; /* ajuste o tamanho da imagem conforme necessário */
+  width: 140px; /* ajuste o tamanho da imagem conforme necessário */
   animation: jump 2.5s infinite;
 }
 

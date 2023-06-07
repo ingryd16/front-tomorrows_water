@@ -81,6 +81,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+textarea{
+    padding: 14px;
+}
   
 #descricao-input {
     height: 170px;

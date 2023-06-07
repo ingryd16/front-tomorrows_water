@@ -37,7 +37,7 @@ class card extends HTMLElement {
                 box-sizing: border-box;
             }
             .card{
-                max-width: 360px;
+                max-width: 370px;
                 height: 712px;
                 display: flex;
                 flex-direction: column;
