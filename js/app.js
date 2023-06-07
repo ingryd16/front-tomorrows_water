@@ -11,7 +11,7 @@ export const produtos = async () => {
     const response = await fetch(url)
     const data = await response.json()
     // const { produtos } = data;
-    console.log(produtos)
+    // console.log(produtos)
     return {
         ...data
     }
