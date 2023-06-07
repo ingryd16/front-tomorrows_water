@@ -38,7 +38,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer>
     </script>
-    <script src="https://kit.fontawesome.com/aff2bef688.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/aff2bef688.js" crossorigin="anonymous"></script>
 
   <script src="https://kit.fontawesome.com/aff2bef688.js" crossorigin="anonymous"></script>
   <script src="./js/app.js" defer type="module"></script>
@@ -52,14 +52,16 @@
   <script src="./js/post_patrocinador.js" defer type="module"></script>
   <script src="./js/post_voluntario.js" defer type="module"></script>
   <script src="./js/post_doador.js" defer type="module"></script>
-  <script src="./js/button.js" defer ></script>
+  <script src="./js/button.js" defer></script>
 
   <title>Tommorow's Water</title>
 </head>
 
 <body>
   <header>
-    <img src="./imagens/logo-tomorrow.png" class="img-header" alt="Logo do Tomorrow's Water" />
+    <div class="img-header">
+      <img src="./imagens/logo-tomorrow.png" class="img-header" alt="Logo do Tomorrow's Water" />
+    </div>
     <div class="navbar">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -77,6 +79,8 @@
       </nav>
     </div>
 
+    <div class="espaco-branco"></div>
+
     <div class="buttons-header">
       <div class="btn-group btn-group-toggle" data-toggle="buttons" onclick="redirecionarPagina()">
         <button onclick="redirecionarPagina()" id="teste" class="btn btn-outline">Doe agora</button>
@@ -88,7 +92,19 @@
   </header>
 
   <main id="root">
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
+    <!-- CARREGAMENTO INCIAL -->
     <div class="loading-container">
       <img src="./imagens/logo-tomorrow.png" class="loading-image" alt="imagem logo">
     </div>
@@ -123,13 +139,13 @@
           </a>
         </div>
       </section>
-  
+
       <section class="onda" id="onda">
         <div class="div-img-onda">
           <img class="img-onda-noticias-1" src="./imagens/img-onda-branca.png" alt="" />
         </div>
       </section>
-  
+
       <section class="ultimas-noticias" id="noticias">
         <div class="container_noticias">
           <div class="title_noticias">
@@ -142,12 +158,12 @@
                           sobre meio ambiente" nome="Texto permite que cidadão possa cobrar acesso à
                           justiça e à participação na tomada de decisões
                           sobre temas ambientais" cor="#FFF"></card-noticia>
-  
+
             <card-noticia foto="./imagens/noticia-2.png" title="Vozes da floresta 
                           presentes no ATL 2023 ecoam sem intermediários" nome="Projeto fortalece redes de ativismo ampliando a
                           participação de jovens comunicadores na maior
                           mobilização indígena do Brasil" cor="#FFF"></card-noticia>
-  
+
             <card-noticia foto="./imagens/noticia-3.png" title="Suspensão do princípio da 
                           boa-fé pelo STF garante mais transparência e controle ao comércio do ouro 
                           no Brasil" nome="Decisão do STF impõe regras eficientes para
@@ -157,23 +173,23 @@
 
         </div>
       </section>
-  
+
       <section class="onda" id="onda">
         <div class="div-img-onda">
           <img class="img-onda-noticias-2" src="./imagens/img-onda-branca.png" alt="" />
         </div>
       </section>
-  
+
       <section class="recado" id="recado">
         <div class="container-recado">
           <div class="container_input_recado">
             <div class="recado-titulo">
               <span class="deixe_recado">Deixe seu recado!</span>
             </div>
-  
+
             <div class="recado-input">
               <form class="forms">
-  
+
                 <div class="row-1">
                   <div class="nome">
                     <div><span>Nome:</span></div>
@@ -181,7 +197,7 @@
                     <small class="error-message"></small>
                   </div>
                 </div>
-  
+
                 <div class="row-1">
                   <div class="email">
                     <div><span>Email:</span></div>
@@ -189,26 +205,26 @@
                     <small class="error-message"></small>
                   </div>
                 </div>
-  
+
                 <div class="row-1">
                   <div class="descricao">
                     <div><span>Mensagem:</span></div>
-                    <textarea type="text" class="input-linha" id="descricao-input" rows="3" cols="60" ></textarea>
+                    <textarea type="text" class="input-linha" id="descricao-input" rows="3" cols="60"></textarea>
                     <!-- TESTAR ASSIM DPS -->
                     <!-- <label for="message">Mensagem:</label><br>
 <textarea name="message" id="message" rows="3" cols="60">digite uma mensagem</textarea> -->
                     <small class="error-message"></small>
                   </div>
                 </div>
-  
+
               </form>
             </div>
-  
+
             <div class="btn-recado-enviar">
               <button class="btn-enviar-recados" id="submit-button" type="click">Enviar</button>
             </div>
           </div>
-  
+
           <div class="container-mapa">
             <div class="mapa">
               <iframe
@@ -219,7 +235,7 @@
           </div>
         </div>
       </section>
-  
+
       <section class="onda" id="onda">
         <div class="div-img-onda">
           <img class="img-onda-footer" src="./imagens/img-onda-branca.png" alt="" />
@@ -249,7 +265,7 @@
         <i class="fa-brands fa-whatsapp" style="color: #00c0ea;"></i>
       </li>
       <li>
-        <i class="fas fa-phone" style="color: #00c0ea;"></i>    
+        <i class="fas fa-phone" style="color: #00c0ea;"></i>
       </li>
       <li>
         <a href="https://www.instagram.com/tomorrows.water/">
@@ -271,4 +287,3 @@
 </body>
 
 </html>
-

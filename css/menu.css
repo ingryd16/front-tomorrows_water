@@ -51,6 +51,7 @@
     font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
+
 .navbar-nav {
     gap: 50px;
 }
@@ -86,12 +87,24 @@
     background-color: var(--primary-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+    header{
+        height: auto;  
+        display: flex;
+    }
+
     .navbar-nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+
+    }
+    .navbar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        padding: 0;
     }
 
     .navbar-collapse {
@@ -102,10 +115,12 @@
     .navbar-toggler {
         margin-top: 10px;
     }
+    .buttons-header{
+        display: flex;
+    }
 
     .btn-group {
         display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 10px;
     }

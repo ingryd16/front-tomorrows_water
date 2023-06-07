@@ -48,3 +48,43 @@ a{
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 880px) {
+   
+}
+
+@media screen and (max-width: 780px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        /* grid-template-areas: 
+        "links"
+        "redes"
+        "logo"; */
+    }
+
+    /* .links_container{
+        grid-area: links;
+
+  
+        background-color: red;
+    }
+    .redes_sociais{
+        grid-area: redes;
+        background-color: royalblue;
+    }
+    .logo_footer{
+        grid-area: logo;
+        background-color: hotpink;
+    } */
+    
+}
