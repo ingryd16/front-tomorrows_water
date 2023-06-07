@@ -17,7 +17,6 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  background-color: crimson;
 }
 
 .container_noticias {
