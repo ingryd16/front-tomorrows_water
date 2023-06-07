@@ -45,8 +45,8 @@
     <script src="../js/app.js" defer type="module"></script>
     <script src="../js/carregarProdutos.js" defer type="module"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script src="./script.js" defer></script>
-    <script src="../card.js" type="module"></script>
+    <!-- <script src="../js/script.js" defer></script> -->
+    <script src="../card.js" defer type="module"></script>
     <script src="../js/post_patrocinador.js" defer type="module"></script>
     <script src="../js/post_voluntario.js" defer type="module"></script>
     <title>Tommorow's Water</title>
@@ -120,7 +120,7 @@
                                 <!-- VALIDATION 2 -->
                                 <div class="validation">
                                     <div class="card-doacao">
-                                        <div class="title">Preencha seus dados pessoais:</div>
+                                        <div class="title">Preencha os dados da empresa:</div>
         
                                         <div class="forms">
                                             <div class="row-1">
@@ -129,16 +129,20 @@
                                                         <span>Razão social:</span>
                                                     </div>
                                                     <input id="input-razao-social" type="text" placeholder="Razão social" class="input-linha">
+                                                    <small class="error-message"></small>
+                                                    <small class="success-message"></small>
                                                 </div>
                                             </div>
         
                                             <div class="row-1">
                                                 <div class="medidas">
                                                     <div>
-                                                        <span>Cnpj:</span>
+                                                        <span>CNPJ:</span>
                                                     </div>
         
                                                     <input id="input-cnpj" type="text" placeholder="Cnpj" class="input-linha">
+                                                    <small class="error-message"></small>
+                                                    <small class="success-message"></small>
                                                 </div>
                                             </div>
         
@@ -148,6 +152,8 @@
                                                         <span>Email:</span>
                                                     </div>
                                                     <input id="input-email" type="text" placeholder="Email" class="input-linha">
+                                                    <small class="error-message"></small>
+                                                    <small class="success-message"></small>
                                                 </div>
                                             </div>
         
@@ -157,6 +163,8 @@
                                                         <span>Telefone:</span>
                                                     </div>
                                                     <input id="input-telefone" type="text" placeholder="Telefone" class="input-linha">
+                                                    <small class="error-message"></small>
+                                                    <small class="success-message"></small>
                                                 </div>
                                             </div>
                                             <div class="btn">
@@ -292,6 +300,8 @@
                                                 <span>Nome:</span>
                                             </div>
                                             <input id="input-nome" type="text" placeholder="Nome" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
 
@@ -302,6 +312,8 @@
                                             </div>
 
                                             <input id="input-cpf" type="text" placeholder="Cpf" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
 
@@ -310,7 +322,9 @@
                                             <div>
                                                 <span>Email:</span>
                                             </div>
-                                            <input id="input-email" type="text" placeholder="Email" class="input-linha">
+                                            <input id="input-email-voluntario" type="text" placeholder="Email" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
 
@@ -319,7 +333,9 @@
                                             <div>
                                                 <span>Telefone:</span>
                                             </div>
-                                            <input id="input-telefone" type="text" placeholder="Telefone" class="input-linha">
+                                            <input id="input-telefone-voluntario" type="text" placeholder="Telefone" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
                                     <div class="row-1">
@@ -328,6 +344,8 @@
                                                 <span>Data de nascimento:</span>
                                             </div>
                                             <input id="input-data-nascimento" type="text" placeholder="aaaa-mm-dd" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
 
                                             <script>
                                                 // Obtenha uma referência para o campo de entrada
@@ -357,11 +375,11 @@
                                         <div class="medidas">
                                             <div>
                                                 <label class="label-genero" for="genero">Gênero:</label>
-                                                <select name="genero" id="genero" placeholder="Escolha um">
-                                                    <option value="">Escolha um</option>
-                                                    <option value="1">Feminino</option>
-                                                    <option value="2">Masculino</option>
-                                                    <option value="3">Outros</option>
+                                                <select name="genero" id="selectGenero" placeholder="Escolha um">
+                                                    <!-- <option value="">Escolha um</option> -->
+                                                    <option value= 1>Feminino</option>
+                                                    <option value= 2>Masculino</option>
+                                                    <option value= 3>Outros</option>
                                                 </select>
 
                                             </div>
@@ -371,7 +389,7 @@
 
 
                                     <div class="btn" >
-                                        <button id="button-enviar">Enviar</button>
+                                        <button id="submit-button-enviar">Enviar</button>
                                     </div>
                                 </div>
 

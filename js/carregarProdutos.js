@@ -2,7 +2,7 @@
 
 import { produtos } from "./app.js"
 let dados = await produtos();
-console.log(dados)
+// console.log(dados)
 
 const cardProduct = (dados) => {
 
