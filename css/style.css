@@ -3,6 +3,9 @@
   --primary-color-light: #95E0F0;
   --second-color: #EFEFEF;
 }
+.error-message{
+  color: red;
+}
 
 html {
   scroll-behavior: smooth;

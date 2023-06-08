@@ -244,6 +244,8 @@
                                                 <span>Nome:</span>
                                             </div>
                                             <input id="input-nome-doador"type="text" placeholder="Nome" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
 
@@ -254,6 +256,8 @@
                                             </div>
 
                                             <input id="input-cpf-doador" type="text" placeholder="Cpf" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
 
@@ -263,6 +267,8 @@
                                                 <span>Email:</span>
                                             </div>
                                             <input id="input-email-doador"type="text" placeholder="Email" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
 
@@ -272,6 +278,8 @@
                                                 <span>Telefone:</span>
                                             </div>
                                             <input id="input-telefone-doador"type="text" placeholder="Telefone" class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                     </div>
                                     <div class="row-1">
@@ -279,8 +287,32 @@
                                             <div>
                                                 <span>Data de nascimento:</span>
                                             </div>
-                                            <input id="input-nascimento-doador" type="text" placeholder="Data de nascimento" class="input-linha">
+                                            <input id="input-nascimento-doador" type="text" placeholder="aaaa-mm-dd" class="input-linha">
+                                              <small class="error-message"></small>
+                                              <small class="success-message"></small>
                                         </div>
+                                        <script>
+                                            // Obtenha uma referência para o campo de entrada
+                                            var input = document.getElementById("input-nascimento-doador");
+                                          
+                                            // Adicione um ouvinte de evento para o evento "input" (quando o valor do campo é alterado)
+                                            input.addEventListener("input", function() {
+                                              // Obtém o valor atual do campo
+                                              var valor = this.value;
+                                          
+                                              // Remove todos os caracteres que não são dígitos
+                                              var apenasNumeros = valor.replace(/\D/g, "");
+                                          
+                                              // Limita a quantidade de caracteres para 8
+                                              apenasNumeros = apenasNumeros.slice(0, 8);
+                                          
+                                              // Formata o valor com hífens no formato desejado (aaaa-mm-dd)
+                                              var novoValor = apenasNumeros.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
+                                          
+                                              // Define o novo valor formatado no campo de entrada
+                                              this.value = novoValor;
+                                            });
+                                          </script>
                                     </div>
 
 
