@@ -4,6 +4,10 @@ import { produtos } from "./app.js"
 let dados = await produtos();
 // console.log(dados)
 
+const virarCardMobile = (card) => {
+    card.classList.toggle('virado'); // Adiciona ou remove a classe "virado" no card
+  };
+
 const cardProduct = (dados) => {
 
     const card = document.createElement('div')
@@ -42,6 +46,14 @@ const cardProduct = (dados) => {
     backCard.appendChild(text_container_back)
 
     card.append(backCard, img, text_container )
+
+    card.addEventListener('click', () => {
+        if (card.classList.contains('virado')) {
+          card.classList.remove('virado'); // Remove a classe "virado" se o card já estiver virado
+        } else {
+          card.classList.add('virado'); // Adiciona a classe "virado" se o card estiver na posição original
+        }
+      });
 
     return card
 
