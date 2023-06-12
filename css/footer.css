@@ -8,11 +8,11 @@ footer {
     background-color: var(--second-color);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.links_container{
+.links_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,20 +22,20 @@ a{
     font-weight: 600;
 }
 
-.links_container a{
+.links_container a {
     border-bottom: 3px solid transparent;
 }
 
-.links_container a:hover{
+.links_container a:hover {
     border-bottom: 3px solid var(--primary-color);
     color: var(--primary-color);
 }
 
-.links_container a{
+.links_container a {
     text-decoration: none;
 }
 
-.redes_sociais{
+.redes_sociais {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,18 +43,24 @@ a{
     gap: 30px;
 }
 
-.logo_footer{
+.logo_footer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media screen and (max-width: 880px) {
-   
-}
-
 @media screen and (max-width: 780px) {
-    
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        gap: 30px;
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -66,25 +72,8 @@ a{
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        /* grid-template-areas: 
-        "links"
-        "redes"
-        "logo"; */
+        gap: 30px;
+        padding: 20px;
     }
 
-    /* .links_container{
-        grid-area: links;
-
-  
-        background-color: red;
-    }
-    .redes_sociais{
-        grid-area: redes;
-        background-color: royalblue;
-    }
-    .logo_footer{
-        grid-area: logo;
-        background-color: hotpink;
-    } */
-    
 }

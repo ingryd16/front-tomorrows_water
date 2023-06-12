@@ -25,26 +25,24 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
         defer>
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
         defer>
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
         defer>
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/aff2bef688.js" crossorigin="anonymous"></script>
 
     <script src="../js/app.js" defer type="module"></script>
     <script src="../js/carregarProdutos.js" defer type="module"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- <script src="../js/script.js" defer></script> -->
-    <script src="../card.js" defer type="module"></script>
     <script src="../js/post_patrocinador.js" defer type="module"></script>
     <script src="../js/post_voluntario.js" defer type="module"></script>
     <script src="../js/post_doador.js" defer type="module"></script>
-    <script src="./js/button.js" defer ></script>
+    <script src="../js/button.js" defer></script>
     <title>Tommorow's Water</title>
 </head>
 
@@ -60,9 +58,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="/"> Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="../pages/sobre-nos.html">Sobre nós</a>
-            <a class="nav-item nav-link" href="../pages/projetos.html">Projetos</a>
-            <a class="nav-item nav-link" href="../pages/junte-se.html">Junte-se a nós</a>
+                        <a class="nav-item nav-link" href="../pages/sobre-nos.html">Sobre nós</a>
+                        <a class="nav-item nav-link" href="../pages/projetos.html">Projetos</a>
+                        <a class="nav-item nav-link" href="../pages/junte-se.html">Junte-se a nós</a>
                     </div>
                 </div>
             </nav>
@@ -84,13 +82,14 @@
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-            </div>
-            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-            <script>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-            </script>
+        </script>
+
         <div class="container_all_junte-se">
             <section class="produtos" id="produtos">
                 <div class="titulo_junte-se">
@@ -99,7 +98,8 @@
 
                 <div class="container-cards">
                     <!-- API -->
-                    <div id="container-collections" class="container-produtos"></div>
+                    <div id="container-collections" class="container-produtos">
+                    </div>
                 </div>
 
             </section>
@@ -121,54 +121,58 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            
+
                             <div class="container">
                                 <!-- VALIDATION 2 -->
                                 <div class="validation">
                                     <div class="card-doacao">
                                         <div class="title">Preencha os dados da empresa:</div>
-        
+
                                         <div class="forms">
                                             <div class="row-1">
                                                 <div class="nome">
                                                     <div>
                                                         <span>Razão social:</span>
                                                     </div>
-                                                    <input id="input-razao-social" type="text" placeholder="Razão social" class="input-linha">
+                                                    <input id="input-razao-social" type="text"
+                                                        placeholder="Razão social" class="input-linha">
                                                     <small class="error-message"></small>
                                                     <small class="success-message"></small>
                                                 </div>
                                             </div>
-        
+
                                             <div class="row-1">
                                                 <div class="medidas">
                                                     <div>
                                                         <span>CNPJ:</span>
                                                     </div>
-        
-                                                    <input id="input-cnpj" type="text" placeholder="Cnpj" class="input-linha">
+
+                                                    <input id="input-cnpj" type="text" placeholder="Cnpj"
+                                                        class="input-linha">
                                                     <small class="error-message"></small>
                                                     <small class="success-message"></small>
                                                 </div>
                                             </div>
-        
+
                                             <div class="row-1">
                                                 <div class="medidas">
                                                     <div>
                                                         <span>Email:</span>
                                                     </div>
-                                                    <input id="input-email" type="text" placeholder="Email" class="input-linha">
+                                                    <input id="input-email" type="text" placeholder="Email"
+                                                        class="input-linha">
                                                     <small class="error-message"></small>
                                                     <small class="success-message"></small>
                                                 </div>
                                             </div>
-        
+
                                             <div class="row-1">
                                                 <div class="medidas">
                                                     <div>
                                                         <span>Telefone:</span>
                                                     </div>
-                                                    <input id="input-telefone" type="text" placeholder="Telefone" class="input-linha">
+                                                    <input id="input-telefone" type="text" placeholder="Telefone"
+                                                        class="input-linha">
                                                     <small class="error-message"></small>
                                                     <small class="success-message"></small>
                                                 </div>
@@ -177,7 +181,7 @@
                                                 <button id="button-enviar">Enviar</button>
                                             </div>
                                         </div>
-        
+
                                     </div>
                                 </div>
                             </div>
@@ -190,6 +194,12 @@
                     <div class="title_doador">
                         <div class="titulo_doacao">
                             <span>Apoie <span class="titulo-azul">doando</span></span>
+                        </div>
+                    </div>
+
+                    <div class="title_ou">
+                        <div class="titulo_ou">
+                            <span class="titulo-azul">ou</span>
                         </div>
                     </div>
 
@@ -243,7 +253,8 @@
                                             <div>
                                                 <span>Nome:</span>
                                             </div>
-                                            <input id="input-nome-doador"type="text" placeholder="Nome" class="input-linha">
+                                            <input id="input-nome-doador" type="text" placeholder="Nome"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
                                         </div>
@@ -255,7 +266,8 @@
                                                 <span>Cpf:</span>
                                             </div>
 
-                                            <input id="input-cpf-doador" type="text" placeholder="Cpf" class="input-linha">
+                                            <input id="input-cpf-doador" type="text" placeholder="Cpf"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
                                         </div>
@@ -266,7 +278,8 @@
                                             <div>
                                                 <span>Email:</span>
                                             </div>
-                                            <input id="input-email-doador"type="text" placeholder="Email" class="input-linha">
+                                            <input id="input-email-doador" type="text" placeholder="Email"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
                                         </div>
@@ -277,7 +290,8 @@
                                             <div>
                                                 <span>Telefone:</span>
                                             </div>
-                                            <input id="input-telefone-doador"type="text" placeholder="Telefone" class="input-linha">
+                                            <input id="input-telefone-doador" type="text" placeholder="Telefone"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
                                         </div>
@@ -287,32 +301,33 @@
                                             <div>
                                                 <span>Data de nascimento:</span>
                                             </div>
-                                            <input id="input-nascimento-doador" type="text" placeholder="aaaa-mm-dd" class="input-linha">
-                                              <small class="error-message"></small>
-                                              <small class="success-message"></small>
+                                            <input id="input-nascimento-doador" type="text" placeholder="aaaa-mm-dd"
+                                                class="input-linha">
+                                            <small class="error-message"></small>
+                                            <small class="success-message"></small>
                                         </div>
                                         <script>
                                             // Obtenha uma referência para o campo de entrada
                                             var input = document.getElementById("input-nascimento-doador");
-                                          
+
                                             // Adicione um ouvinte de evento para o evento "input" (quando o valor do campo é alterado)
-                                            input.addEventListener("input", function() {
-                                              // Obtém o valor atual do campo
-                                              var valor = this.value;
-                                          
-                                              // Remove todos os caracteres que não são dígitos
-                                              var apenasNumeros = valor.replace(/\D/g, "");
-                                          
-                                              // Limita a quantidade de caracteres para 8
-                                              apenasNumeros = apenasNumeros.slice(0, 8);
-                                          
-                                              // Formata o valor com hífens no formato desejado (aaaa-mm-dd)
-                                              var novoValor = apenasNumeros.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
-                                          
-                                              // Define o novo valor formatado no campo de entrada
-                                              this.value = novoValor;
+                                            input.addEventListener("input", function () {
+                                                // Obtém o valor atual do campo
+                                                var valor = this.value;
+
+                                                // Remove todos os caracteres que não são dígitos
+                                                var apenasNumeros = valor.replace(/\D/g, "");
+
+                                                // Limita a quantidade de caracteres para 8
+                                                apenasNumeros = apenasNumeros.slice(0, 8);
+
+                                                // Formata o valor com hífens no formato desejado (aaaa-mm-dd)
+                                                var novoValor = apenasNumeros.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
+
+                                                // Define o novo valor formatado no campo de entrada
+                                                this.value = novoValor;
                                             });
-                                          </script>
+                                        </script>
                                     </div>
 
 
@@ -360,7 +375,8 @@
                                             <div>
                                                 <span>Email:</span>
                                             </div>
-                                            <input id="input-email-voluntario" type="text" placeholder="Email" class="input-linha">
+                                            <input id="input-email-voluntario" type="text" placeholder="Email"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
                                         </div>
@@ -371,7 +387,8 @@
                                             <div>
                                                 <span>Telefone:</span>
                                             </div>
-                                            <input id="input-telefone-voluntario" type="text" placeholder="Telefone" class="input-linha">
+                                            <input id="input-telefone-voluntario" type="text" placeholder="Telefone"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
                                         </div>
@@ -381,32 +398,33 @@
                                             <div>
                                                 <span>Data de nascimento:</span>
                                             </div>
-                                            <input id="input-data-nascimento" type="text" placeholder="aaaa-mm-dd" class="input-linha">
+                                            <input id="input-data-nascimento" type="text" placeholder="aaaa-mm-dd"
+                                                class="input-linha">
                                             <small class="error-message"></small>
                                             <small class="success-message"></small>
 
                                             <script>
                                                 // Obtenha uma referência para o campo de entrada
                                                 var input = document.getElementById("input-data-nascimento");
-                                              
+
                                                 // Adicione um ouvinte de evento para o evento "input" (quando o valor do campo é alterado)
-                                                input.addEventListener("input", function() {
-                                                  // Obtém o valor atual do campo
-                                                  var valor = this.value;
-                                              
-                                                  // Remove todos os caracteres que não são dígitos
-                                                  var apenasNumeros = valor.replace(/\D/g, "");
-                                              
-                                                  // Limita a quantidade de caracteres para 8
-                                                  apenasNumeros = apenasNumeros.slice(0, 8);
-                                              
-                                                  // Formata o valor com hífens no formato desejado (aaaa-mm-dd)
-                                                  var novoValor = apenasNumeros.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
-                                              
-                                                  // Define o novo valor formatado no campo de entrada
-                                                  this.value = novoValor;
+                                                input.addEventListener("input", function () {
+                                                    // Obtém o valor atual do campo
+                                                    var valor = this.value;
+
+                                                    // Remove todos os caracteres que não são dígitos
+                                                    var apenasNumeros = valor.replace(/\D/g, "");
+
+                                                    // Limita a quantidade de caracteres para 8
+                                                    apenasNumeros = apenasNumeros.slice(0, 8);
+
+                                                    // Formata o valor com hífens no formato desejado (aaaa-mm-dd)
+                                                    var novoValor = apenasNumeros.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
+
+                                                    // Define o novo valor formatado no campo de entrada
+                                                    this.value = novoValor;
                                                 });
-                                              </script>
+                                            </script>
                                         </div>
                                     </div>
                                     <div class="row-1">
@@ -415,9 +433,9 @@
                                                 <label class="label-genero" for="genero">Gênero:</label>
                                                 <select name="genero" id="selectGenero" placeholder="Escolha um">
                                                     <!-- <option value="">Escolha um</option> -->
-                                                    <option value= 1>Feminino</option>
-                                                    <option value= 2>Masculino</option>
-                                                    <option value= 3>Outros</option>
+                                                    <option value=1>Feminino</option>
+                                                    <option value=2>Masculino</option>
+                                                    <option value=3>Outros</option>
                                                 </select>
 
                                             </div>
@@ -426,7 +444,7 @@
                                     </div>
 
 
-                                    <div class="btn" >
+                                    <div class="btn">
                                         <button id="submit-button-enviar">Enviar</button>
                                     </div>
                                 </div>
@@ -452,42 +470,42 @@
 
     <footer>
         <div class="links_container">
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#noticias">Últimas notícias</a>
-            </li>
-            <li><a href="#recado">Recado</a>
-            </li>
-          </ul>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#noticias">Últimas notícias</a>
+                </li>
+                <li><a href="#recado">Recado</a>
+                </li>
+            </ul>
         </div>
-    
+
         <div class="redes_sociais">
-          <li>
-            <i class="fa-brands fa-whatsapp" style="color: #00c0ea;"></i>
-          </li>
-          <li>
-            <i class="fas fa-phone" style="color: #00c0ea;"></i>    
-          </li>
-          <li>
-            <a href="https://www.instagram.com/tomorrows.water/">
-              <i class="fa-brands fa-instagram" style="color: #00c0ea;"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:tomorrows.water487@gmail.com">
-              <i class="fa-regular fa-envelope" style="color: #00c0ea;"></i>
-            </a>
-          </li>
+            <li>
+                <i class="fa-brands fa-whatsapp" style="color: #00c0ea;"></i>
+            </li>
+            <li>
+                <i class="fas fa-phone" style="color: #00c0ea;"></i>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/tomorrows.water/">
+                    <i class="fa-brands fa-instagram" style="color: #00c0ea;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:tomorrows.water487@gmail.com">
+                    <i class="fa-regular fa-envelope" style="color: #00c0ea;"></i>
+                </a>
+            </li>
         </div>
-    
+
         <div class="logo_footer">
-          <img src="./imagens/logo_tomorrow_footer.png" alt="Logo do Tomorrow's Water">
+            <img src="../imagens/logo_tomorrow_footer.png" alt="Logo do Tomorrow's Water">
         </div>
-    
-      </footer>
+
+    </footer>
 </body>
 
 </html>

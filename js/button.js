@@ -1,6 +1,6 @@
 'use strict'
 function redirecionarPagina() {
-    var urlDestino = "./junte-se.html";
+    var urlDestino = "../pages/junte-se.html";
     window.location.assign(urlDestino);
     }
 

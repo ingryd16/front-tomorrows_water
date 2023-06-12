@@ -98,6 +98,47 @@ textarea{
     color: red;
 }
 
+@media screen and (max-width: 980px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 880px) {
     .container-recado {
         height: fit-content;
@@ -140,6 +181,47 @@ textarea{
     }
 }
 
+@media screen and (max-width: 780px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 780px) {
     .container-recado {
         height: fit-content;
