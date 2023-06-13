@@ -33,6 +33,7 @@ a {
 
 .links_container a {
     text-decoration: none;
+    color:  #4F4F4F;
 }
 
 .redes_sociais {
@@ -49,6 +50,10 @@ a {
     justify-content: center;
 }
 
+ol{
+    display: flex;
+    gap: 20px;
+}
 @media screen and (max-width: 780px) {
     footer {
         width: 100%;
@@ -61,6 +66,12 @@ a {
         gap: 30px;
         padding: 20px;
     }
+
+    
+    .links_container{
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -74,6 +85,11 @@ a {
         text-decoration: none;
         gap: 30px;
         padding: 20px;
+    }
+
+
+    .links_container{
+        text-align: center;
     }
 
 }

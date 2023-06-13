@@ -5,8 +5,8 @@ import './modal_window.js'
 
 
 export const produtos = async () => {
-   
-  
+
+
     const url = `http://localhost:8080/v1/tomorrows-water/produto`
     const response = await fetch(url)
     const data = await response.json()
@@ -15,6 +15,6 @@ export const produtos = async () => {
     return {
         ...data
     }
-    
-    
+
+
 }

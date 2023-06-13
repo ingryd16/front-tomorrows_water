@@ -1,6 +1,9 @@
-.img-header {
-    width: 120px;
-    height: 76px;
+.navbar-light .navbar-nav .nav-link {
+    color: #4F4F4F;
+}
+
+.header-img {
+ width: 60%;
 }
 
 .navbar-expand-lg navbar-light bg-light {
@@ -21,8 +24,7 @@
     transition: border-color .3s;
 }
 .nav-item a{
-    color: var(--primary-color);
-    
+    color: var(--primary-color)  
 }
 
 .nav-item:hover {
@@ -42,15 +44,9 @@
     transition: .6s;
 }
 
-.img-header {
-    width: 120px;
-    height: 76px;
-}
-
 .navbar-expand-lg .navbar-light.bg-light {
     font-family: "M PLUS Rounded 1c", sans-serif;
 }
-
 
 .navbar-nav {
     gap: 50px;

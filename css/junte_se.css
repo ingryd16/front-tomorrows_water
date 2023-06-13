@@ -55,7 +55,7 @@
     height: 420px;
     flex-direction: column;
     border: none;
-    box-shadow: 8px 10px 14px 10px #95dff0c7;
+    box-shadow: 3px 3px 15px 3px #95dff0c7;
     transition: transform 0.9s;
     transform-style: preserve-3d;
     position: relative;

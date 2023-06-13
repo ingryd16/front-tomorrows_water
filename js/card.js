@@ -8,17 +8,17 @@ class card extends HTMLElement {
         this.title = 'titulo'
         this.nome = 'texto'
         this.cor = 'plum'
-        // this.cor_hover = 'purple'
     }
 
     // atributos que eu quero que ele observe
     static get observedAttributes() {
-        return ['foto','title','nome', 'cor'/* , 'cor_hover' */]
+        return ['foto', 'title', 'nome', 'cor'/* , 'cor_hover' */]
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
-        // valor antigo / valor que será mudado
-        this[nameAttr] = newValue
+        if (oldValue !== newValue) {
+            this[nameAttr] = newValue;
+        }
     }
 
     connectedCallback() {
