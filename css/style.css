@@ -59,8 +59,23 @@ header {
     transform: translateY(-20px);
   }
 }
-
+.content {
+  display: none;
+}
 #content {
   opacity: 0;
   transition: opacity 1s;
+}
+
+.success-message {
+  display: none;
+  color: green;
+  font-weight: bolder;
+  margin-top: 10px;
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.success-message.fade-out {
+  opacity: 0;
 }
