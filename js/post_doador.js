@@ -55,6 +55,7 @@ const cpf = document.getElementById('input-cpf-doador');
 const data_nascimento = document.getElementById('input-nascimento-doador');
 const telefone = document.getElementById('input-telefone-doador');
 const button = document.getElementById('submit-button-doador');
+const successMessage = document.getElementById('success-message');
 
 
 function setErrorFor(input, message) {
@@ -115,6 +116,35 @@ function checkInputs() {
   }
 }
 
+function showSuccessMessage() {
+  successMessage.innerText = 'Doação realizada com sucesso!';
+  successMessage.style.display = 'block';
+
+  setTimeout(function () {
+    successMessage.style.opacity = 0;
+    setTimeout(function () {
+      successMessage.style.display = 'none';
+      successMessage.style.opacity = 1;
+    }, 1000); 
+  }, 3000);
+}
+
+function resetForm() {
+  nome.value = '';
+  email.value = '';
+  cpf.value = '';
+  data_nascimento.value = '';
+  telefone.value = '';
+
+  const formControls = form.querySelectorAll('.forms');
+  formControls.forEach((formControl) => {
+    const small = formControl.querySelector('.error-message');
+    small.innerText = "";
+    formControl.classList.remove('error');
+    formControl.classList.remove('success');
+  });
+}
+
 button.addEventListener('click', async (e) => {
   e.preventDefault();
   checkInputs()
@@ -135,7 +165,6 @@ button.addEventListener('click', async (e) => {
 
   try {
     const doadorId = await createDoador(doador);
-    console.log('ID do doador:', doadorId);
 
     if (doadorId) {
       const doacoes = {
@@ -147,6 +176,9 @@ button.addEventListener('click', async (e) => {
 
       await createDoacao(doacoes);
       console.log('Dados da doação enviados com sucesso.');
+
+      showSuccessMessage(); // Exibir mensagem de sucesso após a conclusão do envio
+      resetForm(); // Limpar o formulário após o envio bem-sucedido
     }
   } catch (error) {
     console.error(error);
