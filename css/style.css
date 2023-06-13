@@ -29,8 +29,10 @@ header {
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: var(--primary-color);
   font-weight: 600;
-  user-select: none;
   height: 90px;
+}
+.user-select{
+  display: none;
 }
 
 .loading-container {
