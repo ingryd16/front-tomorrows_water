@@ -39,15 +39,16 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #95E0F0; /* cor de fundo da tela de carregamento */
+  background-color: #95E0F0; 
+  transition: opacity 2s;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .loading-image {
-  width: 140px; /* ajuste o tamanho da imagem conforme necessário */
-  animation: jump 2.5s infinite;
+  width: 140px;
+  animation: jump 2s infinite;
 }
 
 @keyframes jump {
@@ -57,4 +58,9 @@ header {
   50% {
     transform: translateY(-20px);
   }
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 1s;
 }
