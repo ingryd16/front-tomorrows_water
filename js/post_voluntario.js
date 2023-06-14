@@ -14,11 +14,14 @@ async function createVoluntario(voluntarios) {
     const response = await fetch(url, options);
     if (response.ok) {
       console.log('Dados enviados com sucesso para o servidor.');
+      return true;
     } else {
       console.log('Ocorreu um erro ao enviar os dados para o servidor.');
+      return false;
     }
   } catch (error) {
     console.error('Ocorreu um erro na requisição:', error);
+    return false;
   }
 }
 
@@ -28,7 +31,7 @@ const cpf = document.getElementById("input-cpf");
 const email = document.getElementById("input-email-voluntario");
 const telefone = document.getElementById("input-telefone-voluntario");
 const dataNascimento = document.getElementById("input-data-nascimento");
-const successMessage = document.getElementById('success-message');
+const successMessage = document.getElementById('success-mensagem');
 
 const button = document.getElementById('submit-button-enviar');
 
@@ -37,60 +40,81 @@ function setErrorFor(input, message) {
   const small = formControl.querySelector(".error-message");
 
   // Adiciona a mensagem de erro
-  small.textContent = message;
+  small.innerText = message;
 
   // Adiciona a classe de erro
   formControl.classList.remove("success");
   formControl.classList.add("error");
 }
 
-function setSuccessFor(input, message) {
+function setSuccessFor(input) {
   const formControl = input.parentElement;
-  const small = formControl.querySelector(".success-message");
 
-  small.textContent = message;
+  // Limpa a mensagem de erro
+  const small = formControl.querySelector(".error-message");
+  small.innerText = "";
 
-  // Adicionar a classe de sucesso
+  // Adiciona a classe de sucesso
   formControl.classList.remove("error");
   formControl.classList.add("success");
 }
 
-function checkEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+function checkEmail(input) {
+  const emailValue = input.value.trim();
+  if (emailValue === "") {
+    setErrorFor(input, "O e-mail é obrigatório!");
+    return false;
+  } else if (!isValidEmail(emailValue)) {
+    setErrorFor(input, "Por favor, insira um email válido!");
+    return false;
+  } else {
+    setSuccessFor(input);
+    return true;
+  }
+}
+
+function isValidEmail(email) {
+  // Utilize sua própria expressão regular para validar o email
+  // Este é apenas um exemplo simples
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 function checkInputs() {
-  if (nome.value === "") {
+  let formIsValid = true;
+
+  if (nome.value.trim() === "") {
     setErrorFor(nome, "O nome é obrigatório!");
+    formIsValid = false;
   } else {
     setSuccessFor(nome);
   }
 
-  if (cpf.value === "") {
+  if (cpf.value.trim() === "") {
     setErrorFor(cpf, "O CPF é obrigatório!");
+    formIsValid = false;
   } else {
     setSuccessFor(cpf);
   }
 
-  if (email.value === "") {
-    setErrorFor(email, "O e-mail é obrigatório!");
-  } else if (!checkEmail(email.value)) {
-    setErrorFor(email, "Por favor, insira um email válido!");
-  } else {
-    setSuccessFor(email);
+  if (!checkEmail(email)) {
+    formIsValid = false;
   }
 
-  if (telefone.value === "") {
+  if (telefone.value.trim() === "") {
     setErrorFor(telefone, "O telefone é obrigatório!");
+    formIsValid = false;
   } else {
     setSuccessFor(telefone);
   }
 
-  if (dataNascimento.value === "") {
+  if (dataNascimento.value.trim() === "") {
     setErrorFor(dataNascimento, "A data de nascimento é obrigatória!");
+    formIsValid = false;
   } else {
     setSuccessFor(dataNascimento);
   }
+
+  return formIsValid;
 }
 
 function showSuccessMessage() {
@@ -107,55 +131,39 @@ function showSuccessMessage() {
 }
 
 function resetForm() {
-   
-    nome.value = '';
-    cpf.value = '';
-    email.value = '';
-    telefone.value = '';
-    dataNascimento.value = '';
+  form.reset();
 
-    const errorMessages = form.querySelectorAll('.error-message');
-    const successMessages = form.querySelectorAll('.success-message');
-
-  
-    errorMessages.forEach((errorMessage) => {
-      errorMessage.textContent = '';
-    });
-  
-    successMessages.forEach((successMessage) => {
-        successMessage.textContent = '';
-      });
-    
-
-      const formControls = form.querySelectorAll('.forms');
-
-      formControls.forEach((formControl) => {
-        formControl.classList.remove('error');
-        formControl.classList.remove('success');
-      });
+  const formControls = form.querySelectorAll('.forms');
+  formControls.forEach((formControl) => {
+    const small = formControl.querySelector('.error-message');
+    small.innerText = "";
+    formControl.classList.remove('error');
+    formControl.classList.remove('success');
+  });
 }
-  
 
 button.addEventListener("click", async (e) => {
   e.preventDefault();
-  checkInputs();
 
-  const selectElement = document.getElementById('selectGenero');
-  const selectValue = selectElement.value;
+  if (checkInputs()) {
+    const selectElement = document.getElementById('selectGenero');
+    const selectValue = selectElement.value;
 
-  const voluntarios = {
-    "id": "",
-    "nome": nome.value,
-    "cpf": cpf.value,
-    "email": email.value,
-    "telefone": telefone.value,
-    "data_nascimento": dataNascimento.value,
-    "id_genero": selectValue
-  };
+    const voluntarios = {
+      "id": "",
+      "nome": nome.value.trim(),
+      "cpf": cpf.value.trim(),
+      "email": email.value.trim(),
+      "telefone": telefone.value.trim(),
+      "data_nascimento": dataNascimento.value.trim(),
+      "id_genero": selectValue
+    };
 
-  await createVoluntario(voluntarios);
-  showSuccessMessage();
-  resetForm();
-  
+    const success = await createVoluntario(voluntarios);
 
+    if (success) {
+      showSuccessMessage();
+      resetForm();
+    }
+  }
 });
