@@ -42,6 +42,7 @@ const cardProduct = (dados) => {
     const img = document.createElement('img')
     img.classList.add('card__img')
     img.src = dados.imagem;
+    img.alt = 'imagem dos produtos'
     
     backCard.appendChild(text_container_back)
 
