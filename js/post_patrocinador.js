@@ -1,7 +1,7 @@
 'use strict'
 
 async function createPatrocinador(patrocinador) {
-    const url = 'http://localhost:8080/v1/tomorrows-water/patrocinador';
+    const url = 'https://tomorrows-water.onrender.com/v1/tomorrows-water/patrocinador';
     const options = {
         method: 'POST',
         headers: {
@@ -14,6 +14,7 @@ async function createPatrocinador(patrocinador) {
         const response = await fetch(url, options);
         if (response.ok) {
             console.log('Dados enviados com sucesso para o servidor.');
+            alert('Registro enviado!');
         } else {
             console.log('Ocorreu um erro ao enviar os dados para o servidor.');
         }
@@ -54,6 +55,7 @@ function checkEmail(email) {
 }
 
 function checkInputs() {
+    let isValid = true;
     if (razaoSocial.value === "") {
         setErrorFor(razaoSocial, "A razão social da empresa é obrigatória!");
     } else {
@@ -79,21 +81,41 @@ function checkInputs() {
         setSuccessFor(telefone);
     }
 
+    return isValid;
 }
+
+function limparInputs() {
+    razaoSocial.value = "";
+    cnpj.value = "";
+    email.value = "";
+    telefone.value = "";
+  
+    // Limpar as classes de erro ou sucesso dos inputs
+    setSuccessFor(razaoSocial);
+    setSuccessFor(cnpj);
+    setSuccessFor(email);
+    setSuccessFor(telefone);
+  }
+  
+
 
 button.addEventListener("click", (e) => {
     e.preventDefault();
-    checkInputs();
 
 
-    const patrocinador = {
-        "id": "",
-        "razao_social": razaoSocial.value,
-        "cnpj": cnpj.value,
-        "email": email.value,
-        "telefone": telefone.value
-    };
+    const isValid = checkInputs();
+    if(isValid){ 
+        const patrocinador = {
+            "id": "",
+            "razao_social": razaoSocial.value,
+            "cnpj": cnpj.value,
+            "email": email.value,
+            "telefone": telefone.value
+        };
 
-    createPatrocinador(patrocinador);
-    console.log(patrocinador);
+        createPatrocinador(patrocinador);
+    
+        console.log(patrocinador);
+        limparInputs(); 
+    }
 });

@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
           loader.style.display = 'none';
           content.style.display = 'block';
           content.style.opacity = '1';
-        }, 1000); // Tempo de espera adicional para a transição de cor ocorrer
+        }, 1000); 
       }, 2000);
 
 });

@@ -2,7 +2,7 @@
 
 
 async function createRecado(recado) {
-  const url = 'http://localhost:8080/v1/tomorrows-water/recado';
+  const url = 'https://tomorrows-water.onrender.com/v1/tomorrows-water/recado';
   const options = {
       method: 'POST',
       headers: {
@@ -131,7 +131,6 @@ button.addEventListener("click", async (e) => {
       const success = await createRecado(recado);
       if (success) {
           showSuccessMessage();
-          // Limpar os campos do formulário após o envio bem-sucedido
           resetForm();
       }
   }
