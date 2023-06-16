@@ -131,7 +131,11 @@ function showSuccessMessage() {
 }
 
 function resetForm() {
-  form.reset();
+  nome.value = '';
+  cpf.value = '';
+  email.value = '';
+  telefone.value = '';
+  dataNascimento.value = '';
 
   const formControls = form.querySelectorAll('.forms');
   formControls.forEach((formControl) => {
