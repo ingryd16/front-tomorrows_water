@@ -7,6 +7,8 @@
 ## Sobre:
 Site [Tomorrow's Water]().
 
+[Dashboard](https://github.com/LaylaGiovanna/dashboard-tomorrows-water) do site.
+
 O objetivo deste projeto é colocar em prática os conhecimentos sobre desenvolvimento de sites, com programação web FrontEnd, BackEnd e Banco de Dados adquiridos no curso do [SENAI Jandira](https://jandira.sp.senai.br/).
 
 ---
